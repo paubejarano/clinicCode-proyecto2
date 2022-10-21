@@ -1,0 +1,162 @@
+* {
+  padding-top: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.logo_responsive {
+  width: 10rem;
+  height: 8rem;
+  justify-content: start;
+}
+.section_reservaTuTurno {
+  background-color: #0277bd;
+}
+.bgderechosReservados {
+  background-color: rgb(14, 65, 95);
+}
+#logo {
+  width: 50px;
+  height: 45px;
+}
+
+#pre-navbar {
+  height: 1rem;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 118, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+#portada {
+  height: 60vh;
+  object-fit: cover;
+}
+#formprincipal {
+  width: 100%;
+  max-width: 700px;
+  background: white;
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 10px 20px;
+}
+
+#formprincipal input {
+  flex: 1;
+  border: 0;
+  outline: none;
+  font-size: 20px;
+}
+
+#formprincipal button img {
+  width: 25px;
+}
+
+#formprincipal button {
+  border: 0;
+  width: 60px;
+  background-color: white;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+#logoFooter{
+  object-fit: cover;
+}
+/* LOGIN */
+
+#main_admin{
+  height: 100vh;
+}
+#main_login{
+  margin-top: 6rem;
+  margin-bottom: 5rem;
+}
+.formulario{
+  background: rgb(14, 65, 95);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgb(175, 175, 175);
+}
+/* ERROR 404 */
+
+/* .container-404 {
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  background: #b3e5fc;
+  padding: 50px;
+  border-radius: 5px;
+  line-height: 1.7;
+  color: #434343;
+} */
+/* #mainError{
+  height: 100vh;
+} */
+
+.titulo__portada__error {
+  top: 23rem;
+  left: 5rem;
+  
+}
+.portada-error {
+  height: 100vh;
+  object-fit: cover;
+}
+@media screen and (min-width: 768px) {
+  
+  #error404_sm{display: none;}
+ 
+  
+}
+@media screen and (max-width: 576px) {
+    #urgencia{
+      width: 15rem;
+    }
+    .titulo__portada__error{
+      color: white;
+    }
+}
+
+@media screen and (max-width: 768px) {
+  .font-size__derechosReservados {
+    font-size: medium; }
+   
+  .cardHorariosVisita{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #portada {
+    height: 300px;
+    object-fit: cover;
+  }
+  #urgencia{
+    width: 15rem;
+  }
+  #logoFooter{
+    display: none;
+  }
+  #error404_lg{display: none;}
+  .titulo__portada__error{
+    color: white;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  
+  #logoFooter{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+    #urgencia{
+      width: 20rem;
+    }
+}
