@@ -11,7 +11,7 @@
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/stylepau.css">
   <!-- MDB -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/bdb612451a.js" crossorigin="anonymous"></script>
@@ -50,10 +50,10 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./contactos.html">Contacto</a>
+                <a class="nav-link" href="#">Contacto</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                <a class="nav-link" href="#">Nosotros</a>
               </li>
             </ul>
               <a class="btn btn-success" href="#" role="button">ACCESO ADMIN</a>
@@ -61,46 +61,80 @@
         </div>
       </nav>
       </header>
-    <main id="main_admin">
-        <div class="container-fluid d-flex justify-content-center mt-5 pt-4">
-            <div id="main_login" class="row col-lg-5 col-md-7 col-sm-8">
-                <div class="formulario">
-                    <form action="" class="">
-                        <div class="form-group">
-                            <h3 class="text-light text-center mb-5">Iniciar Sesión</h3>
-                        </div>
-                        <div class="form-group mb-3 mx-lg-5 mx-md-5 mx-sm-3">
-                            <input
-                            type="text"
-                            class="form-control rounded"
-                            placeholder="Ingrese su usuario"
-                            />
-                        </div>
-                        <div class="form-group mb-5 mx-lg-5 mx-md-5 mx-sm-3">
-                            <input
-                            type="password"
-                            class="form-control rounded"
-                            placeholder="Ingrese su contraseña"
-                            />
-                        </div>
-                        <div class="form-group text-center">
-                            <button
-                            type="button"
-                            class="btn btn-success rounded-pill col-7"
-                            >
-                            Continuar
-                            </button>
-                        </div>
-                        <div class="text-center my-2 text-light">
-                            <a class="text-light text-decoration-none" href="error404.html"
-                                >¿Olvidaste tu contraseña?</a>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer class="text-secondary bottom">
+      <main class="main_contactos">
+           
+                <article>
+                    <h2 class="display-5 text-center">¿Cómo podemos ayudarte?</h2>
+                    <p class="display-6 text-center">Envíanos tu consulta</p>
+                </article>
+            <section class="container text-secondary">
+              <article class="row">
+                <form class="mb-3 col-sm-12 col-md-6 col-lg-6">
+                  <div class="mb-3">
+                      <label for="" class="form-label">Nombre y Apellido</label>
+                      <input type="text" class="form-control" id="FormControlInput1" placeholder="Leonardo Zurita" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="" class="form-label">Correo electronico</label>
+                      <input type="email" class="form-control" id="FormControlInput1" placeholder="name@email.com" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="" class="form-label">Telefono</label>
+                      <input type="number" class="form-control" id="FormControlInput1" placeholder="Número" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="" class="form-label">Consulta</label>
+                      <textarea class="form-control" id="FormControlTextarea1" rows="10" required> </textarea>
+                    </div>
+                    <div class="mb-3">
+                      <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Modal" type="button">Enviar</button>
+                      <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="ModalLabel">Su consulta fue enviada</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <p>Se respondera a la brevedad</p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+                    </div>
+                  </form>
+                  <div class="mb-3 col-sm-12 col-md-6 col-lg-6">                
+
+                      <h2 class="text-center">Cómo encontrarnos</h2>
+                      <p class="text-center">Estamos en: General Paz 576</p>
+                    
+                    <iframe class="w-100"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.1022202999156!2d-65.20939048495666!3d-26.83670088316041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses!2sar!4v1665796141892!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                 </div>
+                </article>
+              </section>
+              <!-- <section class="py-3">
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item"><a class="page-link" href="/pages/404notfound.html">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="../index.html">1</a></li>
+                    <li class="page-item"><a class="page-link" href="./Contacto.html">2</a></li>
+                    <li class="page-item"><a class="page-link" href="./AboutUS.html">3</a></li>
+                    <li class="page-item"><a class="page-link" href="./login.html">4</a></li>
+                    <li class="page-item"><a class="page-link" href="./galeria.html">5</a></li>
+                    <li class="page-item"><a class="page-link" href="/pages/404notfound.html">Next</a></li>
+                  </ul>
+                </nav>
+              </section> -->
+      </main>
+
+
+
+
+      <footer class="text-secondary bottom">
         <section class="section_reservaTuTurno text-light border-top border-info">
           <div class="container">
             <div class="row">
@@ -116,7 +150,7 @@
                       <article class="col-lg-6 col-md-6 col-sm-12  mt-3 ">
     
     
-                        <a href="/pages/error404.html" class="nav-link my-0 text-light"> <svg xmlns="http://www.w3.org/2000/svg"
+                        <a href="#" class="nav-link my-0 text-light"> <svg xmlns="http://www.w3.org/2000/svg"
                             class="icon icon-tabler icon-tabler-stethoscope" width="24" height="24" viewBox="0 0 24 24"
                             stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
                             stroke-linejoin="round">
@@ -128,7 +162,7 @@
                             <circle cx="20" cy="10" r="2"></circle>
                           </svg> CIRUGIA</a>
     
-                        <a href="/pages/error404.html" class="nav-link my-0 text-light"> <svg xmlns="http://www.w3.org/2000/svg"
+                        <a href="#" class="nav-link my-0 text-light"> <svg xmlns="http://www.w3.org/2000/svg"
                             class="icon icon-tabler icon-tabler-eye" width="24" height="24" viewBox="0 0 24 24"
                             stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
                             stroke-linejoin="round">
@@ -139,7 +173,7 @@
                             </path>
                           </svg> OFTALMOLOGÍA</a>
     
-                        <a href="error404.html" class="nav-link my-0 text-light"> <svg xmlns="http://www.w3.org/2000/svg"
+                        <a href="#" class="nav-link my-0 text-light"> <svg xmlns="http://www.w3.org/2000/svg"
                             class="icon icon-tabler icon-tabler-crutches" width="24" height="24" viewBox="0 0 24 24"
                             stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
                             stroke-linejoin="round">
@@ -152,7 +186,7 @@
                             <path d="M10 11h4"></path>
                           </svg> TRAUMATOLOGÍA</a>
     
-                        <a href="error404.html" class="nav-link my-0 text-light"> <svg xmlns="http://www.w3.org/2000/svg"
+                        <a href="#" class="nav-link my-0 text-light"> <svg xmlns="http://www.w3.org/2000/svg"
                             class="icon icon-tabler icon-tabler-dental" width="24" height="24" viewBox="0 0 24 24"
                             stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
                             stroke-linejoin="round">
@@ -165,7 +199,7 @@
                       </article>
     
                       <article class="col-lg-6 col-md-6 col-sm-12  mt-3 ">
-                        <a href="error404.html" class="nav-link my-0 text-light"> <svg xmlns="http://www.w3.org/2000/svg"
+                        <a href="#" class="nav-link my-0 text-light"> <svg xmlns="http://www.w3.org/2000/svg"
                             class="icon icon-tabler icon-tabler-woman" width="24" height="24" viewBox="0 0 24 24"
                             stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
                             stroke-linejoin="round">
@@ -174,7 +208,7 @@
                             <path d="M10 22v-4h-2l2 -6a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1l2 6h-2v4"></path>
                           </svg> GINECOLOGÍA</a>
     
-                        <a href="error404.html" class="nav-link my-0 text-light"> <svg xmlns="http://www.w3.org/2000/svg"
+                        <a href="#" class="nav-link my-0 text-light"> <svg xmlns="http://www.w3.org/2000/svg"
                             class="icon icon-tabler icon-tabler-heartbeat" width="24" height="24" viewBox="0 0 24 24"
                             stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
                             stroke-linejoin="round">
@@ -185,7 +219,7 @@
                             <path d="M3 13h2l2 3l2 -6l1 3h3"></path>
                           </svg> CARDIOLOGÍA</a>
     
-                        <a href="error404.html" class="nav-link my-0 text-light"> <svg xmlns="http://www.w3.org/2000/svg"
+                        <a href="#" class="nav-link my-0 text-light"> <svg xmlns="http://www.w3.org/2000/svg"
                             class="icon icon-tabler icon-tabler-baby-carriage" width="24" height="24" viewBox="0 0 24 24"
                             stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
                             stroke-linejoin="round">
@@ -198,7 +232,7 @@
                             <path d="M16 14l1 3"></path>
                           </svg> PEDIATRÍA</a>
     
-                        <a href="error404.html" class="nav-link my-0 text-light"> <svg xmlns="http://www.w3.org/2000/svg"
+                        <a href="#" class="nav-link my-0 text-light"> <svg xmlns="http://www.w3.org/2000/svg"
                             class="icon icon-tabler icon-tabler-mood-crazy-happy" width="24" height="24" viewBox="0 0 24 24"
                             stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
                             stroke-linejoin="round">
@@ -256,11 +290,9 @@
         </section>
     </footer>
 
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-<!-- MDB -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
 </body>
 
-</html>
+      
