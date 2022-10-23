@@ -108,6 +108,15 @@
   height: 100vh;
   object-fit: cover;
 }
+
+.img_editores {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 60px;
+  text-align: center;
+}
+
 @media screen and (min-width: 768px) {
   
   #error404_sm{display: none;}
