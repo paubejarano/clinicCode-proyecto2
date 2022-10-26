@@ -160,3 +160,7 @@
       width: 20rem;
     }
 }
+
+#contenedor .card{
+  background-color: blue 
+}
