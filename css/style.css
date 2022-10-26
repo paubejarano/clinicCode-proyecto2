@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+main{
+  margin-top: 5rem;
+}
 .logo_responsive {
   width: 10rem;
   height: 8rem;
@@ -172,4 +175,15 @@
 /* contactos */
 .main_contactos{
   margin-top: 6rem;
+}
+
+/* CRUD PACIENTES */
+
+.bg-form{
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 118, 121, 1) 35%,
+    rgb(8, 142, 168) 100%
+  );
 }

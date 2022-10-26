@@ -13,13 +13,13 @@ const contenedor = document.getElementById("contenedor");
 const cargarCardContacto = (turno) => {
   contenedor.innerHTML += `
       <div class="col-sm-12 col-md-4 col-lg-3 p-2">
-          <div class="card">
+          <div class="card me-2" style="height: 16rem">
            
               <div class="card-body">
                   <h5 class="card-title">Paciente:</h5>
                   <h3 class="card-title">${turno.paciente}</h3>
                   <p class="card-text"></p>
-                  <p class="card-title"">Profecional: ${turno.profesional}</p>
+                  <p class="card-title"">Profesional: ${turno.profesional}</p>
                   <p class="card-text">Fecha: ${turno.fecha}</p>
                   <p class="card-text">Hora: ${turno.hora}</p>
               </div>
@@ -27,16 +27,18 @@ const cargarCardContacto = (turno) => {
       </div>
       `;
 };
-
 const turnosObtenidos = ObtenerTurnosDelLocalStorage();
 console.log("previo orden");
 const turnosOrdenados = turnosObtenidos.sort((a, b) => {
-  const fechaA = Date(a.fecha);
-  const fechaB = Date(b.fecha);
-
-  return fechaA < fechaB;
+  if(a.Date > b.Date ){
+    return 1;
+  }
+  if(a.Date < b.Date){
+    return -1;
+  }
+  return 0
 });
-console.log("turnos", turnosOrdenados);
+
 RenderizarCards(turnosOrdenados);
 
 function RenderizarCards(turnos) {
@@ -44,9 +46,7 @@ function RenderizarCards(turnos) {
 
   turnos.forEach((turno) => {
     cargarCardContacto(turno);
-    /*const card = crearCard(turno);
-    contenedor.appendChild(card);
-    */
+    
   });
 }
 
