@@ -1,0 +1,30 @@
+.bg_mainTurnos{
+    background-color: #11384e;
+}
+.bg_formTurnos{
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 118, 121, 1) 35%,
+    rgb(8, 142, 168) 100%
+  );
+}
+
+.thTabla{
+  font-size: xx-large;
+}
+
+.tbody__Fontsize{
+  font-size: large;
+}
+#contenedor .card{
+  
+background-color: #11384e;
+  text-align: start;
+  color: antiquewhite;
+}
+
+button{
+  background-color: red;
+  color: antiquewhite;
+}

@@ -116,7 +116,6 @@
   border-radius: 60px;
   text-align: center;
 }
-
 @media screen and (min-width: 768px) {
   
   #error404_sm{display: none;}
@@ -169,7 +168,6 @@
       width: 20rem;
     }
 }
-
 
 /* contactos */
 .main_contactos{
