@@ -44,3 +44,30 @@ export const validateNumber = (valor, campo) => {
     }
     
 };
+
+export const validateEmail = (valor, campo) => {
+  if (valor.trim().length < 4) {
+    campo.classList = "form-control is-invalid";
+    return false;
+  }
+
+  const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+
+  if (!regex.test(valor)) {
+    campo.classList = "form-control is-invalid";
+    return false;
+  }
+
+  campo.classList = "form-control";
+  return true;
+};
+
+export const validateConsulta = (valor, campo) =>{
+  if(valor.trim().length< 10){
+    campo.classList = "form-control is-invalid"
+    return false;
+  }else{
+    campo.classList="form-control";
+    return true;
+  }
+}

@@ -24,7 +24,7 @@
       >
         <div id="pre-navbar" class="w-100 mb-2 position-absolute top-0"></div>
         <div class="container fluid">
-          <a class="navbar-brand" href="../index (5).html">
+          <a class="navbar-brand" href="../index.html">
             <img src="../img/logotipo-clinica-o-medico-forma-estetoscopio-letra-c_200408-292.jpg" alt="logo_responsive" class="" id="logo" />
             CLINIC CODE</a
           >
@@ -45,7 +45,7 @@
           >
             <ul class="navbar-nav ms-auto me-auto">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../index (5).html"
+                <a class="nav-link" aria-current="page" href="../index.html"
                   >Inicio</a
                 >
               </li>
@@ -63,76 +63,55 @@
       </header>
       <main class="main_contactos">
            
-                <article>
+                <article class="">
                     <h2 class="display-5 text-center">¿Cómo podemos ayudarte?</h2>
                     <p class="display-6 text-center">Envíanos tu consulta</p>
                 </article>
             <section class="container text-secondary">
               <article class="row">
-                <form class="mb-3 col-sm-12 col-md-6 col-lg-6">
-                  <div class="mb-3">
-                      <label for="" class="form-label">Nombre y Apellido</label>
-                      <input type="text" class="form-control" id="FormControlInput1" placeholder="Leonardo Zurita" required>
+                <form id="formConsulta" class="mb-3 col-sm-12 col-md-6 col-lg-6 border border-dark rounded">
+                  <div class="mb-4">
+                      <label for="" class="form-label text-dark">Nombre y Apellido</label>
+                      <input type="text" class="form-control" id="nombreForm" placeholder="Leonardo Zurita" required>
+                      <div class="invalid-feedback">
+                        Ingrese un nombre válido
+                      </div>
                     </div>
-                    <div class="mb-3">
-                      <label for="" class="form-label">Correo electronico</label>
-                      <input type="email" class="form-control" id="FormControlInput1" placeholder="name@email.com" required>
+                    <div class="mb-4">
+                      <label for="" class="form-label text-dark">Correo electrónico</label>
+                      <input type="email" class="form-control" id="emailForm" placeholder="name@email.com" required>
+                      <div class="invalid-feedback">
+                        Ingrese un email válido
+                      </div>
                     </div>
-                    <div class="mb-3">
-                      <label for="" class="form-label">Telefono</label>
-                      <input type="number" class="form-control" id="FormControlInput1" placeholder="Número" required>
+                    <div class="mb-4">
+                      <label for="" class="form-label text-dark">Telefono</label>
+                      <input type="number" class="form-control" id="telefonoForm" placeholder="Número" required>
+                      <div class="invalid-feedback">
+                        Ingrese un telefono válido
+                      </div>
                     </div>
-                    <div class="mb-3">
-                      <label for="" class="form-label">Consulta</label>
-                      <textarea class="form-control" id="FormControlTextarea1" rows="10" required> </textarea>
+                    <div class="mb-4">
+                      <label for="" class="form-label text-dark">Consulta</label>
+                      <textarea class="form-control" id="consultaForm" rows="10" required> </textarea>
+                      <div class="invalid-feedback">
+                        Ingrese su consulta
+                      </div>
                     </div>
-                    <div class="mb-3">
-                      <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Modal" type="button">Enviar</button>
-                      <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h1 class="modal-title fs-5" id="ModalLabel">Su consulta fue enviada</h1>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                              <p>Se respondera a la brevedad</p>
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
-        
-      </div>
-    </div>
-  </div>
-</div>
+                    <div class="mb-4">
+                      <button class="btn btn-success" type="button" onclick="validateForm()">Enviar</button>
                     </div>
                   </form>
                   <div class="mb-3 col-sm-12 col-md-6 col-lg-6">                
 
-                      <h2 class="text-center">Cómo encontrarnos</h2>
-                      <p class="text-center">Estamos en: General Paz 576</p>
+                      <h2 class="text-center text-dark">Cómo encontrarnos</h2>
+                      <p class="text-center text-dark">Estamos en: General Paz 576</p>
                     
                     <iframe class="w-100"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.1022202999156!2d-65.20939048495666!3d-26.83670088316041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses!2sar!4v1665796141892!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                  </div>
                 </article>
               </section>
-              <!-- <section class="py-3">
-                <nav aria-label="Page navigation example">
-                  <ul class="pagination justify-content-center">
-                    <li class="page-item"><a class="page-link" href="/pages/404notfound.html">Previous</a></li>
-                    <li class="page-item"><a class="page-link" href="../index.html">1</a></li>
-                    <li class="page-item"><a class="page-link" href="./Contacto.html">2</a></li>
-                    <li class="page-item"><a class="page-link" href="./AboutUS.html">3</a></li>
-                    <li class="page-item"><a class="page-link" href="./login.html">4</a></li>
-                    <li class="page-item"><a class="page-link" href="./galeria.html">5</a></li>
-                    <li class="page-item"><a class="page-link" href="/pages/404notfound.html">Next</a></li>
-                  </ul>
-                </nav>
-              </section> -->
       </main>
-
-
-
 
       <footer class="text-secondary bottom">
         <section class="section_reservaTuTurno text-light border-top border-info">
@@ -292,7 +271,8 @@
 
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="../js/app.js"></script>
 </body>
 
       
